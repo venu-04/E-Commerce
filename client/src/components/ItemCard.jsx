@@ -10,7 +10,7 @@ export default function ItemCard({ item }) {
     }
     try {
       await axios.post(
-        "http://localhost:5000/api/cart",
+        "https://e-commerce-backend-ys7k.onrender.com/api/cart",
         { itemId: item._id },
         { headers: { Authorization: `Bearer ${token}` } }
       );
